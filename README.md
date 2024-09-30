@@ -1,10 +1,10 @@
 # challenge-pinapp
 
-Desafío a resolver de microservicios:
+## Desafío a resolver de microservicios
 
 1. Microservicio desarrollado en JAVA Spring Boot
 2. API Rest documentada en Swagger
-3. Deployado en AWS o algún Cloud + código subido en Github endpoint de:
+3. Deployado en AWS o algún Cloud + código subido en Github, endpoint de:
 - Entrada `POST /creacliente`
   - Nombre
   - Apellido
@@ -15,3 +15,6 @@ Desafío a resolver de microservicios:
   - Desviación estándar entre las edades de todos los clientes
 - Endpoint de salida `GET /listclientes`
   - Lista de personas con todos los datos + fecha probable de muerte de cada una
+
+## URLs
+- [SwaggerUI](http://pinapp-ms-clients-env.eba-zqer93nn.us-east-2.elasticbeanstalk.com/swagger-ui/index.html)

@@ -27,10 +27,10 @@ public class ClienteCreacionRequestDTO {
 
     @NotNull(message = "Fecha de nacimiento es requerido")
     @DateTimeFormat(iso = DateTimeFormat.ISO.DATE)
-    @Schema(description = "Fecha de nacimiento del cliente", example = "2001-10-31")
+    @Schema(description = "Fecha de nacimiento del cliente", example = "1997-01-10")
     private LocalDate fechaNacimiento;
 
     @Positive(message = "Edad no puede ser un valor negativo")
-    @Schema(description = "Edad del cliente", example = "28")
+    @Schema(description = "Edad del cliente", example = "27")
     private Integer edad;
 }

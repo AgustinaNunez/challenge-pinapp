@@ -1,3 +1,5 @@
+server:
+  port: 8080
 spring:
   application:
     name: pinapp-clientes
@@ -6,6 +8,8 @@ spring:
     driver-class-name: org.h2.Driver
     username: test
     password: password
+    hikari:
+      maximum-pool-size: 10
   sql:
     init:
       platform: h2
@@ -14,5 +18,16 @@ spring:
       enabled: true
   jpa:
     database-platform: org.hibernate.dialect.H2Dialect
+    show-sql: true
     hibernate:
       ddl-auto: update
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health
+  endpoint:
+    health:
+      show-details: always
+debug:
+  true
