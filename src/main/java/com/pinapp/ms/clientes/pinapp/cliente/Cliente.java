@@ -25,7 +25,7 @@ public class Cliente {
 
     public Integer getEdad() {
         if (this.fechaNacimiento == null) {
-            return null;
+            return 0;
         }
         return Period.between(this.fechaNacimiento, LocalDate.now()).getYears();
     }

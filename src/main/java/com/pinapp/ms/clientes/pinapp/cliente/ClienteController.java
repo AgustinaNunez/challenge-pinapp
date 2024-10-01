@@ -43,7 +43,10 @@ public class ClienteController {
             description = "Crea un nuevo cliente")
     @ApiResponses(value = {
             @ApiResponse(responseCode = "201", description = "Cliente creado exitosamente"),
-            @ApiResponse(responseCode = "400", description = "Datos ingresados inválidos")
+            @ApiResponse(responseCode = "400", description = "Datos ingresados inválidos"),
+            @ApiResponse(responseCode = "400", description = "Datos ingresados inválidos",
+                    content = {@Content(mediaType = MediaType.APPLICATION_JSON_VALUE,
+                    schema = @Schema(implementation = ErrorResponseDTO.class))})
     })
     public ResponseEntity<ClienteResponseDTO> creaCliente(
             @Valid @RequestBody ClienteCreacionRequestDTO request
