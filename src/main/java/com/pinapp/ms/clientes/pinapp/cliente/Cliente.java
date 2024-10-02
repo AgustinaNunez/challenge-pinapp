@@ -21,11 +21,11 @@ public class Cliente {
 
     @Transient
     @Getter(AccessLevel.NONE)
-    private Integer edad;
+    private int edad;
 
-    public Integer getEdad() {
+    public int getEdad() {
         if (this.fechaNacimiento == null) {
-            return null;
+            return 0;
         }
         return Period.between(this.fechaNacimiento, LocalDate.now()).getYears();
     }
