@@ -4,7 +4,6 @@ import com.pinapp.ms.clientes.pinapp.cliente.dto.ClienteCreacionRequestDTO;
 import com.pinapp.ms.clientes.pinapp.cliente.dto.ClienteResponseDTO;
 import com.pinapp.ms.clientes.pinapp.cliente.dto.ClientesKpiResponseDTO;
 import com.pinapp.ms.clientes.pinapp.errors.NotFoundException;
-import net.minidev.json.writer.FakeMapper;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;

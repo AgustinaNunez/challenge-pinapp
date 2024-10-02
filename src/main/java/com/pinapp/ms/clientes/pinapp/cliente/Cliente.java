@@ -21,9 +21,9 @@ public class Cliente {
 
     @Transient
     @Getter(AccessLevel.NONE)
-    private Integer edad;
+    private int edad;
 
-    public Integer getEdad() {
+    public int getEdad() {
         if (this.fechaNacimiento == null) {
             return 0;
         }

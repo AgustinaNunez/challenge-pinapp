@@ -26,16 +26,14 @@ public class ClienteTest {
 
     @Test
     public void getEdad() {
-        Integer edad = cliente.getEdad();
-        assertNotNull(edad);
+        int edad = cliente.getEdad();
         assertTrue(edad > 0);
     }
 
     @Test
     public void getEdad_return0() {
         cliente.setFechaNacimiento(null);
-        Integer edad = cliente.getEdad();
-        assertNotNull(edad);
+        int edad = cliente.getEdad();
         assertEquals(0, edad);
     }
 
